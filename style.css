@@ -1,10 +1,10 @@
-/* Estilos gerais */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Definindo a fonte e a cor de fundo geral */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff9f0;
@@ -21,6 +21,7 @@ header {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 header h1 {
   font-size: 3rem;
   margin-bottom: 10px;
@@ -31,6 +32,7 @@ header p {
   font-style: italic;
 }
 
+/* Imagem destacada no cabeçalho */
 header img {
   max-width: 40%;
   height: auto;
@@ -48,6 +50,7 @@ section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilizando os títulos das seções */
 h2 {
   margin-bottom: 10px;
   color: #d35400;
@@ -55,36 +58,81 @@ h2 {
   font-weight: bold;
 }
 
-/* Novidades e Ofertas Especiais */
-#novidades, #ofertas {
-  background-color: #f9f9f9;
-  border-left: 5px solid #2ecc71;
+/* Estilo para o menu (lista de pratos) */
+ul {
+  list-style: none;
 }
 
-#novidades ul, #ofertas ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-#novidades li, #ofertas li {
-  width: 45%;
+li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 10px 0;
   font-size: 1.2rem;
 }
 
-#novidades li img, #ofertas li img {
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
+li:hover {
+  background-color: #f1f1f1;
+  border-radius: 5px;
 }
 
-.avaliacao {
-  background-color: #f1f1f1;
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 15px;
+li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
 }
+
+li .price {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+/* Estilizando o rodapé */
+footer {
+  text-align: center;
+  color: #777;
+  margin-top: 40px;
+  font-size: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+/* Estilos para links */
+a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para imagens em geral */
+img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilizando os botões */
+button {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #d35400;
+}
+
+button:active {
+  background-color: #c0392b;
+} 
