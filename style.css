@@ -34,10 +34,10 @@ header p {
 
 /* Imagem destacada no cabeçalho */
 header img {
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
-  border-radius: 4px;
-  margin-top: 10px;
+  border-radius: 3px;
+  margin-top: 8px;
 }
 
 /* Estilizando as seções */
