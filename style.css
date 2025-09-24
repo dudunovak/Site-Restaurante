@@ -8,7 +8,7 @@
 /* Definindo as cores principais */
 :root {
   --cor-primaria: #682305; /* Laranja */
-  --cor-secundaria: #f3e9e9; /* Branco */
+  --cor-secundaria: #fffcfc; /* Branco */
   --cor-texto: #050404; /* Texto escuro */
   --cor-hover: #ec5d09; /* Laranja mais escuro para hover */
 }
@@ -41,9 +41,9 @@ header p {
 }
 
 header img {
-  width: 100%;
-  max-width: 400px;
-  margin-top: 15px;
+  width: 80%;
+  max-width: 300px;
+  margin-top: 10px;
   border-radius: 10%;
 }
 
@@ -98,6 +98,7 @@ header button:hover {
   height: 100px;
   object-fit: cover;
   margin-right: 55px;
+  border-radius: 20%;
 }
 
 #menu li span {
