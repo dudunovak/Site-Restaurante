@@ -8,9 +8,9 @@
 /* Definindo as cores principais */
 :root {
   --cor-primaria: #682305; /* Laranja */
-  --cor-secundaria: #090101; /* Branco */
-  --cor-texto: #fdf9f9; /* Texto escuro */
-  --cor-hover: #d72202; /* Laranja mais escuro para hover */
+  --cor-secundaria: #f3e9e9; /* Branco */
+  --cor-texto: #050404; /* Texto escuro */
+  --cor-hover: #ec5d09; /* Laranja mais escuro para hover */
 }
 
 /* Estilo geral do corpo */
