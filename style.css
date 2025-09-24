@@ -93,10 +93,10 @@ header button:hover {
 }
 
 #menu li img {
-  width: 100px;
-  height: 80px;
+  width: 135px;
+  height: 100px;
   object-fit: cover;
-  margin-right: 35px;
+  margin-right: 55px;
 }
 
 #menu li span {
