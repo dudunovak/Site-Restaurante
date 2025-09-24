@@ -41,7 +41,7 @@ header p {
 }
 
 header img {
-  width: 80%;
+  width: 60%;
   max-width: 300px;
   margin-top: 10px;
   border-radius: 10%;
@@ -97,8 +97,7 @@ header button:hover {
   width: 135px;
   height: 100px;
   object-fit: cover;
-  margin-right: 55px;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 
 #menu li span {
