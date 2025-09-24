@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurante Sabor & Arte</title>
+  <title>Restaurante Eduaido Reborn</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,6 +17,16 @@
       <button onclick="window.location.href='https://www.google.com/maps/place/Rua+das+Flores,+123'">Localização</button>
     </div>
   </header>
+
+  <!-- Carrossel de Imagens -->
+  <section id="carrossel">
+    <div class="carousel">
+      <img src="./espaguete-com-molho-a-bolonhesa-ou-ragu-bolognese-1.jpeg" alt="Prato 1">
+      <img src="./download.jpeg" alt="Prato 2">
+      <img src="./saladadekaniepepino.webp" alt="Prato 3">
+      <img src="./download (1).jpeg" alt="Prato 4">
+    </div>
+  </section>
 
   <section id="menu">
     <h2>Cardápio</h2>
@@ -41,36 +51,7 @@
         <span>Torta de limão</span>
         <span class="price">R$ 14,90</span>
       </li>
-      <li>
-        <img src="./lasanha.jpeg" alt="Lasanha à bolonhesa">
-        <span>Lasanha à bolonhesa</span>
-        <span class="price">R$ 39,90</span>
-      </li>
-      <li>
-        <img src="./feijoada.jpeg" alt="Feijoada completa">
-        <span>Feijoada completa</span>
-        <span class="price">R$ 42,90</span>
-      </li>
-      <li>
-        <img src="./risoto-de-frutos-do-mar.jpeg" alt="Risoto de frutos do mar">
-        <span>Risoto de frutos do mar</span>
-        <span class="price">R$ 49,90</span>
-      </li>
-      <li>
-        <img src="./frango-a-parmegiana.jpeg" alt="Frango à parmegiana">
-        <span>Frango à parmegiana</span>
-        <span class="price">R$ 34,90</span>
-      </li>
-      <li>
-        <img src="./pizza-marguerita.jpeg" alt="Pizza marguerita">
-        <span>Pizza Marguerita</span>
-        <span class="price">R$ 29,90</span>
-      </li>
-      <li>
-        <img src="./sorvete-de-chocolate.jpeg" alt="Sorvete de chocolate">
-        <span>Sorvete de chocolate</span>
-        <span class="price">R$ 19,90</span>
-      </li>
+      <!-- Adicionar os outros pratos aqui -->
     </ul>
   </section>
 
@@ -84,11 +65,47 @@
     <h2>Contato</h2>
     <p>Telefone: (11) 99999-9999</p>
     <p>Email: <a href="mailto:contato@saborearte.com">contato@saborearte.com</a></p>
+
+    <!-- Formulário de Contato -->
+    <form id="form-contato">
+      <input type="text" placeholder="Seu Nome" required>
+      <input type="email" placeholder="Seu Email" required>
+      <textarea placeholder="Sua Mensagem" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+
     <button onclick="window.location.href='mailto:contato@saborearte.com'">Enviar Email</button>
   </section>
 
   <footer>
     <p>© 2025 Restaurante Eduaido Reborn | Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Modal de reserva -->
+  <div id="modal-reserva" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Faça sua Reserva</h2>
+      <form id="form-reserva">
+        <input type="text" placeholder="Nome" required>
+        <input type="number" placeholder="Número de Pessoas" required>
+        <input type="datetime-local" required>
+        <button type="submit">Reservar</button>
+      </form>
+    </div>
+  </div>
+
+  <button id="btn-reserva" onclick="openModal()">Fazer Reserva</button>
+
+  <script>
+    // Funções de Modal para reserva
+    function openModal() {
+      document.getElementById("modal-reserva").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("modal-reserva").style.display = "none";
+    }
+  </script>
 </body>
 </html>
