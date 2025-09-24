@@ -93,7 +93,7 @@ header button:hover {
 }
 
 #menu li img {
-  width: 70px;
+  width: 100px;
   height: 80px;
   object-fit: cover;
   margin-right: 35px;
